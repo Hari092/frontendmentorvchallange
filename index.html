@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@100&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: hsl(30, 38%, 92%);
+        }
+        div.box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 500px;
+            width: 700px;
+            background-color:#fff;
+            border-radius: 10px;
+        }
+        img{
+            height: 500px;
+            width: 350px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;    
+        }
+        .box{
+            display: flex;
+        }
+        .letterbox{
+            padding: 30px 50px 30px 30px;
+            text-align: justify;
+        }
+        p,p1{
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:700;
+            padding-bottom: 25px;
+        }
+        h1{
+            font-weight: 700;
+            padding-bottom: 30px;
+            font-family: 'Fraunces', serif;
+            font-size: 40px;
+        }
+        p{
+            letter-spacing: 5px;
+        }
+        p1{
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+        .dollar{
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            padding: 20px 0px 20px 0px;
+        }
+        p2{
+            color: hsl(158, 36%, 37%);
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: xx-large;
+        }
+        article{
+            padding-top: 10px;
+            padding-left: 20px;
+            text-decoration: line-through;
+        }
+        .btn{
+            width: 100%;
+            height: 40px;
+            background-color:hsl(158, 36%, 37%);
+            border: 0px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+        button{
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box">
+            <div class="img-box" id="img-box">
+                <img src="image-product-desktop.jpg" alt="img1">
+            </div>
+            <div class="letterbox">
+                <p>PERFUME</p>
+                <h1>Gabrielle EssenceEau De Parfum</h1>
+                <p1>
+                    A floral,solar and voluptuous interpretation composed by Oliver Polge,Perfumer-Creator for the House of CHANEL 
+                </p1>
+                <div class="dollar">
+                    <p2>$149.99</p2>
+                    <article>$169.99</article>
+                </div>
+                <button class="btn"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>Add to cart</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
